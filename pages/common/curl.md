@@ -28,6 +28,10 @@
 
 `curl --data {{'{"name":"bob"}'}} --header {{'Content-Type: application/json'}} {{http://example.com/users/1234}}`
 
+- Send data in JSON format, using a file input:
+
+`curl --data {{@filename.json}} --header {{'Content-Type: application/json'}} {{http://example.com/users/1234}}`
+
 - Pass a username and password for server authentication:
 
 `curl --user myusername:mypassword {{http://example.com}}`
